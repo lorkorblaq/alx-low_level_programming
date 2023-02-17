@@ -21,3 +21,4 @@ int main(void)
 			"d" (l));
 	return (1);
 }
+
