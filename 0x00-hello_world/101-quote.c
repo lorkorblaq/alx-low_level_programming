@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *  * main - prints to string
- *   * Description: Prints "and that piece of art is useful.." without puts
- *    * Return: 1
- *     */
+ * main - prints to string
+ * Description: Prints "and that piece of art is useful.." without puts
+ * Return: 1
+ */
 
 int main(void)
 {
@@ -13,6 +13,7 @@ int main(void)
 	long fd = 1;
 	long syscall = 1;
 	long ret = 0;
+
 	__asm__ ("syscall"
 			: "=a" (ret)
 			: "a" (syscall),
@@ -21,4 +22,3 @@ int main(void)
 			"d" (l));
 	return (1);
 }
-
